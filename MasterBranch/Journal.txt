@@ -1,0 +1,3 @@
+Daily task:
+17/10/24: 
+# Did Completed OpenGL assignment using python and submitted 
