@@ -70,3 +70,53 @@ void display() {
         glVertex3f(-1.0, 0.0, -1.0);
         glEnd();
     } else {
+
+        // Draw triangular prism
+
+        // Base Triangle 1
+        glBegin(GL_TRIANGLES);
+        glColor3f(1, 0, 0);
+        glVertex3f(-1.0, -0.5, 1.0);
+        glVertex3f(1.0, -0.5, 1.0);
+        glVertex3f(0.0, 0.5, 1.0);
+        glEnd();
+
+        // Base Triangle 2 (back face)
+        glBegin(GL_TRIANGLES);
+        glColor3f(0, 1, 0);
+        glVertex3f(-1.0, -0.5, -1.0);
+        glVertex3f(1.0, -0.5, -1.0);
+        glVertex3f(0.0, 0.5, -1.0);
+        glEnd();
+
+        // Side 1: Connect left edges of both triangles
+        glBegin(GL_QUADS);
+        glColor3f(0, 0, 1);
+        glVertex3f(-1.0, -0.5, 1.0);
+        glVertex3f(-1.0, -0.5, -1.0);
+        glVertex3f(0.0, 0.5, -1.0);
+        glVertex3f(0.0, 0.5, 1.0);
+        glEnd();
+
+        // Side 2: Connect right edges of both triangles
+        glBegin(GL_QUADS);
+        glColor3f(1, 1, 0);
+        glVertex3f(1.0, -0.5, 1.0);
+        glVertex3f(1.0, -0.5, -1.0);
+        glVertex3f(0.0, 0.5, -1.0);
+        glVertex3f(0.0, 0.5, 1.0);
+        glEnd();
+
+        // Side 3: Connect bottom edges of both triangles
+        glBegin(GL_QUADS);
+        glColor3f(1, 0, 1);
+        glVertex3f(-1.0, -0.5, 1.0);
+        glVertex3f(1.0, -0.5, 1.0);
+        glVertex3f(1.0, -0.5, -1.0);
+        glVertex3f(-1.0, -0.5, -1.0);
+        glEnd();
+    }
+
+    glutSwapBuffers();
+}
+
