@@ -1,3 +1,4 @@
+
 Daily task:
 17/10/24: 
 # Did Completed OpenGL assignment using python and submitted 
@@ -6,4 +7,5 @@ Daily task:
 18/10/24:
 # Today submitted the C verison of that code
 # did the some practice problems
-# algorithm Revision
+# algorithm revision
+# got sick at night at caught cold
