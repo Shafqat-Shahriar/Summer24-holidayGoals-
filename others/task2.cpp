@@ -20,3 +20,53 @@ void display() {
               camZ - cos(camYaw) * cos(camPitch),
               0.0f, 1.0f, 0.0f);
 
+
+    glRotatef(objectRotation, 0.0f, 1.0f, 0.0f);
+
+    if (showPyramid) {
+
+        glBegin(GL_TRIANGLES);
+        // Front face
+        glColor3f(1, 0, 0);
+        glVertex3f(0.0, 1.0, 0.0);
+        glColor3f(0, 1, 0);
+        glVertex3f(-1.0, 0.0, 1.0);
+        glColor3f(0, 0, 1);
+        glVertex3f(1.0, 0.0, 1.0);
+        // Right face
+        glColor3f(1, 0, 0);
+        glVertex3f(0.0, 1.0, 0.0);
+        glColor3f(0, 0, 1);
+        glVertex3f(1.0, 0.0, 1.0);
+        glColor3f(1, 1, 0);
+        glVertex3f(1.0, 0.0, -1.0);
+
+        // Back face
+        glColor3f(1, 0, 0);
+        glVertex3f(0.0, 1.0, 0.0);
+        glColor3f(1, 1, 0);
+        glVertex3f(1.0, 0.0, -1.0);
+        glColor3f(0, 1, 1);
+        glVertex3f(-1.0, 0.0, -1.0);
+
+        // Left face
+        glColor3f(1, 0, 0);
+        glVertex3f(0.0, 1.0, 0.0);
+        glColor3f(0, 1, 1);
+        glVertex3f(-1.0, 0.0, -1.0);
+        glColor3f(0, 1, 0);
+        glVertex3f(-1.0, 0.0, 1.0);
+        glEnd();
+
+        // Draw base of the pyramid
+        glBegin(GL_QUADS);
+        glColor3f(1, 0, 1);
+        glVertex3f(-1.0, 0.0, 1.0);
+        glColor3f(0, 1, 1);
+        glVertex3f(1.0, 0.0, 1.0);
+        glColor3f(1, 1, 0);
+        glVertex3f(1.0, 0.0, -1.0);
+        glColor3f(0, 1, 0);
+        glVertex3f(-1.0, 0.0, -1.0);
+        glEnd();
+    } else {
