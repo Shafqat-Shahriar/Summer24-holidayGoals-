@@ -3,3 +3,7 @@ Daily task:
 # Did Completed OpenGL assignment using python and submitted 
 # Did Revision of the Data Structure
 # Tried some qoogle interview questions
+18/10/24:
+# Today submitted the C verison of that code
+# did the some practice problems
+# algorithm Revision
