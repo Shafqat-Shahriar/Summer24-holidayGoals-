@@ -120,4 +120,58 @@ void display() {
     glutSwapBuffers();
 }
 
+void keyboard(unsigned char key, int x, int y) {
+    switch (key) {
+        case 'a': objectRotation += 5.0f; break;
+        case 'd': objectRotation -= 5.0f; break;
+        case '.': showPyramid = true; break;
+        case ',': showPyramid = false; break;
+    }
+
+    glutPostRedisplay();
+}
+
+void specialInput(int key, int x, int y) {
+    switch (key) {
+        case GLUT_KEY_LEFT: camX -= 0.1f; break;
+        case GLUT_KEY_RIGHT: camX += 0.1f; break;
+        case GLUT_KEY_UP: camY += 0.1f; break;
+        case GLUT_KEY_DOWN: camY -= 0.1f; break;
+        case 5: camPitch += rotationIncrement; break;
+        case 6: camPitch -= rotationIncrement; break;
+        case 7: camYaw -= rotationIncrement; break;
+        case 8: camYaw += rotationIncrement; break;
+    }
+
+
+    if (camPitch > pitchLimit) camPitch = pitchLimit;
+    if (camPitch < -pitchLimit) camPitch = -pitchLimit;
+
+    glutPostRedisplay();
+}
+
+void init() {
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glEnable(GL_DEPTH_TEST);
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(45.0, 1.0, 1.0, 100.0);
+    glMatrixMode(GL_MODELVIEW);
+}
+
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitWindowSize(640, 480);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow("Pyramid/Prism");
+
+    init();
+    glutDisplayFunc(display);
+    glutKeyboardFunc(keyboard);
+    glutSpecialFunc(specialInput);
+    glutMainLoop();
+    return 0;
+}
 
