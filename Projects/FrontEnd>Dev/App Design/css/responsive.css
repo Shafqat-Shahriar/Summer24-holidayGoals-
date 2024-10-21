@@ -1,0 +1,190 @@
+/*-----mobile-reponsive-css-----*/
+@media only screen and (min-width: 0px) and (max-width: 499px) {
+	.info-left h3 {
+		font-size: 16px !important;
+		padding: 0px !important;
+	}
+
+	.info-left a {
+		font-size: 18px !important;
+	}
+
+	.info-right {
+		width: 50px;
+		height: 50px !important;
+	}
+
+	.info-right a:after {
+		width: 8px;
+		height: 8px;
+		bottom: 5px;
+		right: 10px;
+	}
+
+	.switch .icon i {
+		font-size: 20px;
+	}
+
+	.switch {
+		width: 40px;
+		height: 40px;
+		margin-bottom: 10px;
+	}
+
+	.colorfull-switch {
+		padding: 5px 5px 20px 5px;
+	}
+
+	.header-part-2nd.pt-4 {
+		padding-top: 1rem !important;
+	}
+
+	.colorfull-switch h4 {
+		font-size: 10px;
+	}
+
+	.slider-texts h5 {
+		font-size: 12px;
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+
+	.slider-texts h3 {
+		font-size: 14px;
+	}
+
+	.slide-box a {
+		height: 25px;
+		font-size: 13px;
+	}
+
+	.slide-box {
+		padding: 15px;
+		right: 15%;
+	}
+
+	.slick-list {
+		padding: 0 10% 0 0;
+	}
+
+	.Slider-area-two .slide-img {
+		padding-right: 10px;
+	}
+
+	.slick-dots li.slick-active button {
+		width: 8px;
+		height: 8px;
+	}
+
+	.slick-dots li button {
+		width: 7px;
+		height: 7px;
+		margin: 0 3px !important;
+	}
+
+	ul.slick-dots {
+		padding-right: 30px;
+	}
+
+	.section-title h4 {
+		font-size: 15px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+		font-weight: 400;
+	}
+
+	ul.slick-dots {
+		top: -35px !important;
+	}
+
+	.Slider-area-two {
+		padding-bottom: 125px;
+		padding-top: 10px;
+	}
+
+	.navbar {
+		height: 60px;
+		border-radius: 20px;
+	}
+
+	.navbar ul {
+		width: 300px;
+	}
+
+	.navbar ul li {
+		width: 60px;
+	}
+
+	.inner {
+		width: 50px;
+		height: 50px;
+	}
+
+	.navbar ul li a span i {
+		font-size: 16px;
+	}
+
+	.navbar ul li.active .icon {
+		-webkit-transform: translateY(-35px)translateX(0px);
+		transform: translateY(-30px)translateX(0px);
+	}
+
+	.indicator {
+		width: 60px;
+		height: 60px;
+		border: 5px solid #171A28;
+		left: 0px;
+	}
+
+	.one.active ~ .indicator {
+		-webkit-transform: translateX(calc(60px * 0)) translateY(-50%);
+		transform: translateX(calc(60px * 0)) translateY(-50%);
+	}
+
+	.two.active ~ .indicator {
+		-webkit-transform: translateX(calc(60px * 1)) translateY(-50%);
+		transform: translateX(calc(60px * 1)) translateY(-50%);
+	}
+
+	.three.active ~ .indicator {
+		-webkit-transform: translateX(calc(60px * 2)) translateY(-50%);
+		transform: translateX(calc(60px * 2)) translateY(-50%);
+	}
+
+	.four.active ~ .indicator {
+		-webkit-transform: translateX(calc(60px * 3)) translateY(-50%);
+		transform: translateX(calc(60px * 3)) translateY(-50%);
+	}
+
+	.five.active ~ .indicator {
+		-webkit-transform: translateX(calc(60px * 4)) translateY(-50%);
+		transform: translateX(calc(60px * 4)) translateY(-50%);
+	}
+
+	.indicator:before {
+		left: -21px;
+		bottom: 5px;
+	}
+
+	.indicator:after {
+		right: -21px;
+		bottom: 5px;
+	}
+
+}
+
+@media screen and (max-width: 1279px) {
+	body {
+		overflow-x: hidden !important;
+	}
+
+	.container {
+		max-width: 100% !important;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+	ul.slick-dots {
+		padding-right: 30px;
+	}
+}
