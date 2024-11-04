@@ -1,4 +1,21 @@
-To solve this puzzle, let's analyze each clue:
+### Puzzle 2
+
+Alok has three daughters. His friend Shyam wants to know the ages of his daughters. Alok gives him a first hint. 
+
+1. The product of their age is 72. 
+
+Shyam says this is not enough information Alok gives him a second hint. 
+
+2. The sum of their ages is equal to my house number. 
+
+Shyam goes out and looks at the house number and tells “I still do not have enough information to determine the ages”. 
+Alok admits that Shyam can not guess and gives him the third hint 
+
+3. The oldest girl likes strawberry ice cream. 
+
+Shyam is able to guess after the third hint. Can you guess what are the ages of the three daughters? 
+
+
 
 ### Step 1: List Possible Age Combinations
 Since the product of the daughters' ages is 72, let's list all combinations of three positive integers that multiply to 72:
