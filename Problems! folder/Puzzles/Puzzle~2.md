@@ -17,6 +17,7 @@ Alok admits that Shyam can not guess and gives him the third hint
 
 Shyam is able to guess after the third hint. Can you guess what are the ages of the three daughters? 
 
+![puz2](img|folder/hint_puz1.png)
 
 
 ### Step 1: List Possible Age Combinations
