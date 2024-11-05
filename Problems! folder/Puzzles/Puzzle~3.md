@@ -2,6 +2,8 @@
 
 Puzzle: Two trains are on same track and they are coming toward each other. The speed of the first train is 50 km/h and the speed of the second train is 70 km/h. A bee starts flying between the trains when the distance between two trains is 100 km. The bee first flies from first train to second train. Once it reaches the second train, it immediately flies back to the first train … and so on until trains collide. Calculate the total distance travelled by the bee. Speed of bee is 80 km/h. 
 
+![puz2](img|folder/puzzle3a.png)
+
 
 u = 50 km/hr
 v = 70 km/hr
