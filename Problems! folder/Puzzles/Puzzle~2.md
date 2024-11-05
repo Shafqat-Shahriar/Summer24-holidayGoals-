@@ -2,6 +2,8 @@
 
 Alok has three daughters. His friend Shyam wants to know the ages of his daughters. Alok gives him a first hint. 
 
+![puz2](img|folder/Find-agesof-daughters.png)
+
 1. The product of their age is 72. 
 
 Shyam says this is not enough information Alok gives him a second hint. 
