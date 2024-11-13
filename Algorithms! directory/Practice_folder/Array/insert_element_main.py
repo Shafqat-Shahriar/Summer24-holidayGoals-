@@ -4,8 +4,8 @@
 # method to insert element
 
 
-def insertEnd(arr, elment):
-   arr.apend(element) 
+def insertEnd(arr, element):
+   arr.append(element) 
 
 
 # Driver's code
@@ -20,4 +20,5 @@ if __name__ == '__main__':
 
    # array after Inserting element 
    insertEnd(arr, key)
+   print("After Inserting: ")
    print(arr)
